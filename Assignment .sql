@@ -8,9 +8,9 @@ CREATE TABLE IF NOT EXISTS trainee
     full_name 			VARCHAR(225),
     birth_date 			DATE,
     gender				ENUM('M','F') null,
-    ET_IQ 				TINYINT(2),
-    ET_gmath 			TINYINT(2),
-    ET_English 			TINYINT(2),
+    ET_IQ 				TINYINT(2) UNSIGNED NOT NULL CHECK( ET_IQ <= 20 ),
+    ET_gmath 			TINYINT(2) UNSIGNED NOT NULL CHECK( ET_gmath <= 20 ),
+    ET_English 			TINYINT(2) UNSIGNED NOT NULL CHECK( ET_English <= 50 ),
     trainee_class 		VARCHAR(20),
     evaluation_notes 	VARCHAR(225)
 );
