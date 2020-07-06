@@ -24,7 +24,7 @@ CREATE TABLE trainee1
 	ID 				INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `NAME` 			VARCHAR(30),
     `Code`			CHAR(5),
-    ModifiedDate	DATETIME
+    ModifiedDate	DATETIME DEFAULT NOW()
 );
 
 CREATE TABLE trainee2
