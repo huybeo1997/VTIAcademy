@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS `Account`
     Email 			VARCHAR(50),
     Username 		VARCHAR(50),
     fullname		VARCHAR(50),
-    DepartmentID 	VARCHAR(50),
-    positionID 		VARCHAR(50),
-    createdate		date
+    DepartmentID 	INT,
+    positionID 		INT,
+    createdate		DATE
 );
 
 CREATE TABLE IF NOT EXISTS `Group`
